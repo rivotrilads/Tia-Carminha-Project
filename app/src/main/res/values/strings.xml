@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tia Carminha</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Tia Carminha</string>
+    <string name="nav_header_subtitle">Bar &amp; Restaurante</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="configutacoes">Configurações</string>
+
+    <string name="menu_cardapio">Cardápio</string>
+    <string name="menu_pedido">Pedido</string>
+    <string name="menu_mesa">Mesa</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="bt_sair">Sair</string>
+</resources>

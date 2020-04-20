@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_principal"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_cardapio"
+            android:icon="@drawable/ic_cardapio"
+            android:title="@string/menu_cardapio" />
+        <item
+            android:id="@+id/menu_pedido"
+            android:icon="@drawable/ic_pedido"
+            android:title="@string/menu_pedido" />
+        <item
+            android:id="@+id/menu_mesa"
+            android:icon="@drawable/ic_mesa"
+            android:title="@string/menu_mesa" />
+
+
+    </group>
+
+    <item
+        android:id="@+id/sair"
+        android:icon="@drawable/ic_sair"
+        android:title="@string/bt_sair"
+        android:onClick="sair"
+       />
+</menu>

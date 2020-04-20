@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/menu_cardapio">
+
+    <fragment
+        android:id="@+id/menu_cardapio"
+        android:name="com.dexter.tiacarminha.ui.Activity.CardapioFragment"
+        android:label="@string/menu_cardapio"
+        tools:layout="@layout/fragment_cardapio">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.dexter.tiacarminha.ui.Activity.Testar"
+        android:label="@string/home_second"
+        tools:layout="@layout/testar">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/menu_cardapio" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_pedido"
+        android:name="com.dexter.tiacarminha.ui.Activity.PedidoFragment"
+        android:label="@string/menu_pedido"
+        tools:layout="@layout/fragment_pedido" />
+
+    <fragment
+        android:id="@+id/menu_mesa"
+        android:name="com.dexter.tiacarminha.ui.Activity.MesaFragment"
+        android:label="@string/menu_mesa"
+        tools:layout="@layout/fragment_mesa" />
+    <fragment
+        android:id="@+id/menu_mesa2"
+        android:name="com.dexter.tiacarminha.ui.Activity.MesaFragment"
+        android:label="@string/menu_mesa"
+        tools:layout="@layout/fragment_mesa" />
+</navigation>
